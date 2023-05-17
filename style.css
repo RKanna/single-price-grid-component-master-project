@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-cyan: hsl(179, 62%, 43%);
+  --clr-bright-yellow: hsl(71, 73%, 54%);
+  --clr-light-grey: hsl(204, 43%, 93%);
+  --clr-greyish-blue: hsl(218, 22%, 67%);
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e6eff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 37rem;
+  height: 60vh;
+  padding: 2rem;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+}
+.card {
+  background-color: blueviolet;
+}
+.grid-child1 {
+  grid-column: span 2;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: azure;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  height: auto;
+}
+.content-container-child1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading-child1 {
+  color: #3ca7a9;
+  font-size: larger;
+}
+.heading2-child1 {
+  font-size: medium;
+  color: #c3d467;
+}
+.para-child1 {
+  font-size: small;
+  width: 94%;
+  line-height: 1.5rem;
+  color: #b6b8c3;
+}
+.grid-child2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  border-radius: 0 0 0 0.5rem;
+  background-color: #2bb3b1;
+  padding: 2rem;
+  height: auto;
+}
+.content-container-child2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading2-child2 {
+  margin-left: -1.5rem;
+  font-size: medium;
+  color: white;
+}
+.pricing {
+  font-size: x-large;
+  color: white;
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+}
+.pricing-detail {
+  font-size: small;
+  color: #68d9d7;
+  position: absolute;
+  top: 7px;
+  left: 3.5rem;
+}
+.access-details {
+  font-size: small;
+  color: white;
+}
+.btn-main {
+  padding: 0.7rem 4.5rem 0.7rem 4.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #bfdf32;
+  background-color: #bfdf32;
+  cursor: pointer;
+  color: white;
+}
+.grid-child3 {
+  border-radius: 0 0 0.5rem 0;
+  background-color: #4abebd;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  height: auto;
+}
+.content-container-child3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading2-child3 {
+  font-size: medium;
+  color: white;
+}
+.access-details-child3 {
+  font-size: 12px;
+  color: #a4eeef;
+  width: 157px;
+}
+.next-line-element {
+  width: 12px;
+}
